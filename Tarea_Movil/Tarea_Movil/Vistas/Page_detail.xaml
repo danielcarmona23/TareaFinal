@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tarea_Movil.Vistas.Page_detail">
+    <ContentPage.Content>
+        <StackLayout Margin="5"
+                     BackgroundColor="Gray">
+            <Label Text="Datos del Empleado"
+                   FontSize="Title"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="txtNombre"
+                   Placeholder="Nombre"/>
+            <Entry x:Name="txtApellidos"
+                   Placeholder="Apellidos"/>
+            <Entry x:Name="txtedad" 
+                   Placeholder="Ingrese su Edad" 
+                   Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtdireccion" 
+                    Placeholder="Ingrese su Direccion" />
+            <Entry x:Name="txtpuesto" 
+                   Placeholder="Ingrese su Puesto" 
+                   Keyboard="Text"></Entry>
+
+            <Button Text="Actualizar"
+                    x:Name="btn_actualizar"/>
+            <Button Text="Eliminar"
+                    x:Name="btn_eliminar"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

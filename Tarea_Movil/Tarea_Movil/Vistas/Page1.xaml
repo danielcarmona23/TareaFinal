@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tarea_Movil.Vistas.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO"
+                   FontSize="Title"
+                   HorizontalOptions="Center" />
+            <Entry Placeholder="Busque su Nombre Registrado"
+                   x:Name="txtNombre"/>
+            <Button x:Name="btnBuscar"
+                    VerticalOptions="Fill"
+                    Text="Buscar contacto"/>
+            <Button x:Name="btnRegistrar"
+                    VerticalOptions="Fill"
+                    Text="Registrar Contacto"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
